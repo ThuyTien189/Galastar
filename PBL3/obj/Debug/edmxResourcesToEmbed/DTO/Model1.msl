@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PBL3demoModelStoreContainer" CdmEntityContainer="PBL3demo">
+    <EntitySetMapping Name="CHITIET_THELOAI">
+      <EntityTypeMapping TypeName="PBL3demoModel.CHITIET_THELOAI">
+        <MappingFragment StoreEntitySet="CHITIET_THELOAI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MaPhim" ColumnName="MaPhim" />
+          <ScalarProperty Name="MaTheLoai" ColumnName="MaTheLoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GHEs">
+      <EntityTypeMapping TypeName="PBL3demoModel.GHE">
+        <MappingFragment StoreEntitySet="GHE">
+          <ScalarProperty Name="MaGhe" ColumnName="MaGhe" />
+          <ScalarProperty Name="MaPhong" ColumnName="MaPhong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GHE_SC">
+      <EntityTypeMapping TypeName="PBL3demoModel.GHE_SC">
+        <MappingFragment StoreEntitySet="GHE_SC">
+          <ScalarProperty Name="ID_Ghe" ColumnName="ID_Ghe" />
+          <ScalarProperty Name="MaGhe" ColumnName="MaGhe" />
+          <ScalarProperty Name="MaPhong" ColumnName="MaPhong" />
+          <ScalarProperty Name="MaSuatChieu" ColumnName="MaSuatChieu" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOADONs">
+      <EntityTypeMapping TypeName="PBL3demoModel.HOADON">
+        <MappingFragment StoreEntitySet="HOADON">
+          <ScalarProperty Name="MaHoaDon" ColumnName="MaHoaDon" />
+          <ScalarProperty Name="MaUser" ColumnName="MaUser" />
+          <ScalarProperty Name="SoLuongVe" ColumnName="SoLuongVe" />
+          <ScalarProperty Name="ThanhTien" ColumnName="ThanhTien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IMGs">
+      <EntityTypeMapping TypeName="PBL3demoModel.IMG">
+        <MappingFragment StoreEntitySet="IMG">
+          <ScalarProperty Name="MaIMG" ColumnName="MaIMG" />
+          <ScalarProperty Name="IMG1" ColumnName="IMG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PHIMs">
+      <EntityTypeMapping TypeName="PBL3demoModel.PHIM">
+        <MappingFragment StoreEntitySet="PHIM">
+          <ScalarProperty Name="MaPhim" ColumnName="MaPhim" />
+          <ScalarProperty Name="TenPhim" ColumnName="TenPhim" />
+          <ScalarProperty Name="ThoiLuong" ColumnName="ThoiLuong" />
+          <ScalarProperty Name="NDTomTat" ColumnName="NDTomTat" />
+          <ScalarProperty Name="DaoDien" ColumnName="DaoDien" />
+          <ScalarProperty Name="DienVien" ColumnName="DienVien" />
+          <ScalarProperty Name="MaIMG" ColumnName="MaIMG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PHONGCHIEUx">
+      <EntityTypeMapping TypeName="PBL3demoModel.PHONGCHIEU">
+        <MappingFragment StoreEntitySet="PHONGCHIEU">
+          <ScalarProperty Name="MaPhong" ColumnName="MaPhong" />
+          <ScalarProperty Name="SoGheToiDa" ColumnName="SoGheToiDa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUATCHIEUx">
+      <EntityTypeMapping TypeName="PBL3demoModel.SUATCHIEU">
+        <MappingFragment StoreEntitySet="SUATCHIEU">
+          <ScalarProperty Name="MaSuatChieu" ColumnName="MaSuatChieu" />
+          <ScalarProperty Name="MaPhong" ColumnName="MaPhong" />
+          <ScalarProperty Name="MaPhim" ColumnName="MaPhim" />
+          <ScalarProperty Name="NgayChieu" ColumnName="NgayChieu" />
+          <ScalarProperty Name="GioChieu" ColumnName="GioChieu" />
+          <ScalarProperty Name="SoVeDaDat" ColumnName="SoVeDaDat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THELOAIs">
+      <EntityTypeMapping TypeName="PBL3demoModel.THELOAI">
+        <MappingFragment StoreEntitySet="THELOAI">
+          <ScalarProperty Name="MaTheLoai" ColumnName="MaTheLoai" />
+          <ScalarProperty Name="TenTheLoai" ColumnName="TenTheLoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USERS">
+      <EntityTypeMapping TypeName="PBL3demoModel.USER">
+        <MappingFragment StoreEntitySet="USERS">
+          <ScalarProperty Name="MaUser" ColumnName="MaUser" />
+          <ScalarProperty Name="UserNames" ColumnName="UserNames" />
+          <ScalarProperty Name="PassWords" ColumnName="PassWords" />
+          <ScalarProperty Name="isAdmin" ColumnName="isAdmin" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="CMND" ColumnName="CMND" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="DiemTichLuy" ColumnName="DiemTichLuy" />
+          <ScalarProperty Name="IMG" ColumnName="IMG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VEs">
+      <EntityTypeMapping TypeName="PBL3demoModel.VE">
+        <MappingFragment StoreEntitySet="VE">
+          <ScalarProperty Name="MaVe" ColumnName="MaVe" />
+          <ScalarProperty Name="MaUser" ColumnName="MaUser" />
+          <ScalarProperty Name="MaHoaDon" ColumnName="MaHoaDon" />
+          <ScalarProperty Name="MaSuatChieu" ColumnName="MaSuatChieu" />
+          <ScalarProperty Name="MaPhim" ColumnName="MaPhim" />
+          <ScalarProperty Name="MaPhong" ColumnName="MaPhong" />
+          <ScalarProperty Name="MaGhe" ColumnName="MaGhe" />
+          <ScalarProperty Name="NgayBanVe" ColumnName="NgayBanVe" />
+          <ScalarProperty Name="GiaVe" ColumnName="GiaVe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

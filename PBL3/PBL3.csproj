@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{565BCD09-FB56-4990-8B7D-2596B1F21595}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PBL3</RootNamespace>
+    <AssemblyName>PBL3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\Management_BookingTicket_BLL.cs" />
+    <Compile Include="CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomTextBox2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomTextBox2.Designer.cs">
+      <DependentUpon>CustomTextBox2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DTO\CBBItem.cs" />
+    <Compile Include="DTO\Chart_Film_View.cs" />
+    <Compile Include="DTO\Chart_Schedule_Film_View.cs" />
+    <Compile Include="DTO\CHITIET_THELOAI.cs" />
+    <Compile Include="DAL\CreateDB.cs" />
+    <Compile Include="DTO\Film_View.cs" />
+    <Compile Include="DTO\GHE.cs" />
+    <Compile Include="DTO\Seat_View.cs" />
+    <Compile Include="DTO\VE_SC.cs" />
+    <Compile Include="DTO\HOADON.cs" />
+    <Compile Include="DAL\PBL3_CF.cs" />
+    <Compile Include="DTO\PHIM.cs" />
+    <Compile Include="DTO\PHONGCHIEU.cs" />
+    <Compile Include="DTO\Schedule_View.cs" />
+    <Compile Include="DTO\SUATCHIEU.cs" />
+    <Compile Include="DTO\THELOAI.cs" />
+    <Compile Include="DTO\ThongKePhim_View.cs" />
+    <Compile Include="DTO\ThongKeSCPhim_View.cs" />
+    <Compile Include="DTO\Ticket_View.cs" />
+    <Compile Include="DTO\USER.cs" />
+    <Compile Include="DTO\VE.cs" />
+    <Compile Include="FilmItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FilmItem.Designer.cs">
+      <DependentUpon>FilmItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TicketItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TicketItem.Designer.cs">
+      <DependentUpon>TicketItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEWS\Admin\AdminPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEWS\Admin\AdminPage.Designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEWS\Admin\FilmPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEWS\Admin\FilmPage.Designer.cs">
+      <DependentUpon>FilmPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEWS\Admin\StatisticPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEWS\Admin\StatisticPage.Designer.cs">
+      <DependentUpon>StatisticPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEWS\Admin\SchedulePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEWS\Admin\SchedulePage.Designer.cs">
+      <DependentUpon>SchedulePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEWS\Login\LoginMainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEWS\Login\LoginMainPage.Designer.cs">
+      <DependentUpon>LoginMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEWS\Login\ResetPassPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEWS\Login\ResetPassPage.Designer.cs">
+      <DependentUpon>ResetPassPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEWS\Login\SignUpPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEWS\Login\SignUpPage.Designer.cs">
+      <DependentUpon>SignUpPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEWS\UnLoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEWS\UnLoginPage.Designer.cs">
+      <DependentUpon>UnLoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEWS\User\AccountPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEWS\User\AccountPage.Designer.cs">
+      <DependentUpon>AccountPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEWS\User\HistoryPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEWS\User\HistoryPage.Designer.cs">
+      <DependentUpon>HistoryPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEWS\User\ItemPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEWS\User\ItemPage.Designer.cs">
+      <DependentUpon>ItemPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEWS\User\OrderPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEWS\User\OrderPage.Designer.cs">
+      <DependentUpon>OrderPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEWS\User\UserPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEWS\User\UserPage.Designer.cs">
+      <DependentUpon>UserPage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CustomTextBox2.resx">
+      <DependentUpon>CustomTextBox2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilmItem.resx">
+      <DependentUpon>FilmItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TicketItem.resx">
+      <DependentUpon>TicketItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEWS\Admin\AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEWS\Admin\FilmPage.resx">
+      <DependentUpon>FilmPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEWS\Admin\SchedulePage.resx">
+      <DependentUpon>SchedulePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEWS\Admin\StatisticPage.resx">
+      <DependentUpon>StatisticPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEWS\Login\LoginMainPage.resx">
+      <DependentUpon>LoginMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEWS\Login\ResetPassPage.resx">
+      <DependentUpon>ResetPassPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEWS\Login\SignUpPage.resx">
+      <DependentUpon>SignUpPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEWS\UnLoginPage.resx">
+      <DependentUpon>UnLoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEWS\User\AccountPage.resx">
+      <DependentUpon>AccountPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEWS\User\HistoryPage.resx">
+      <DependentUpon>HistoryPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEWS\User\ItemPage.resx">
+      <DependentUpon>ItemPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEWS\User\OrderPage.resx">
+      <DependentUpon>OrderPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEWS\User\UserPage.resx">
+      <DependentUpon>UserPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\277022722_1117882025656475_5259883700876752754_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-off-outline.png" />
+    <None Include="Resources\eye-outline.png" />
+    <None Include="Resources\DefaultFilm.png" />
+    <None Include="Resources\background.png" />
+    <Content Include="Resources\film1.jpg" />
+    <Content Include="Resources\film2.jpg" />
+    <Content Include="Resources\film3.jpg" />
+    <Content Include="Resources\film4.jpg" />
+    <Content Include="Resources\film5.jpg" />
+    <None Include="Resources\DefaultUser.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
